@@ -59,4 +59,3 @@ For any questions or feedback, please reach out via [GitHub Issues](https://gith
 
 ---
 
-Feel free to adjust any section as needed or add any additional details specific to your project!
