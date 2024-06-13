@@ -1,7 +1,3 @@
-Sure, here's the updated README with the license link leading to the LICENSE file:
-
----
-
 # Food Delivery App
 
 A web-based application for ordering food online.
