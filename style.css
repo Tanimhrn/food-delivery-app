@@ -42,13 +42,10 @@ main {
   display: flex;
   justify-content: space-between;
 }
-.food_items {
-  padding-top: 26px;
-  padding-left: 40px;
-  padding-right: 40px;
-  display: flex;
-  justify-content: space-between;
-  line-height: 19.5px;
+.bikeman {
+  position: absolute;
+  left: 38px;
+  top: 70px;
 }
 .food_items {
   padding-top: 26px;
@@ -58,7 +55,8 @@ main {
   justify-content: space-between;
   line-height: 19.5px;
 }
-a {
+
+.food_items a {
   text-decoration: none;
   font-size: 13px;
   font-weight: 400;
@@ -221,26 +219,21 @@ a {
 }
 .box .homebtn {
   position: absolute;
-  top: 330px;
+  top: 336px;
   left: 15px;
 }
 .box .navsearch {
   position: absolute;
-  top: 330px;
-  left: 100px;
+  top: 336px;
+  left: 120px;
 }
 .box .nav_notif {
   position: absolute;
-  top: 330px;
-  left: 200px;
+  top: 336px;
+  right: 120px;
 }
 .box .nav_profile {
   position: absolute;
-  top: 330px;
-
+  top: 336px;
   right: 15px;
-}
-.navbar {
-  display: flex;
-  justify-content: space-between;
 }
