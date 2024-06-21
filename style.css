@@ -1,15 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   background-color: rgba(126, 137, 198, 1);
 }
+
 html {
   font-size: 62.5%;
 }
+
 :root {
   --blue-color: rgba(126, 137, 198, 1);
   --purple-color: rgba(170, 126, 198, 1);
@@ -17,223 +21,248 @@ html {
   --gray-text: rgba(88, 89, 91, 1);
   --black_text: rgba(0, 0, 0, 1);
 }
+
 main {
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
 }
+
 .top_box {
   width: 100vw;
   height: 50vh;
-  padding-top: 34px;
-  padding-left: 22px;
-  padding-right: 22px;
+  padding-top: 3.4rem;
+  padding-left: 2.2rem;
+  padding-right: 2.2rem;
   position: relative;
 }
+
 .bottom_box {
   background-color: var(--white-color);
   width: 100vw;
   height: 50vh;
-  border-top-left-radius: 34px;
-  border-top-right-radius: 34px;
-  padding-bottom: 34px;
+  border-top-left-radius: 3.4rem;
+  border-top-right-radius: 3.4rem;
+  padding-bottom: 3.4rem;
   position: relative;
 }
+
 .top_icons {
   display: flex;
   justify-content: space-between;
 }
+
 .bikeman {
   position: absolute;
-  left: 38px;
-  top: 70px;
+  left: 3.8rem;
+  top: 7rem;
 }
+
 .food_items {
-  padding-top: 26px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-top: 2.6rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
   display: flex;
   justify-content: space-between;
-  line-height: 19.5px;
+  line-height: 1.95rem;
 }
 
 .food_items a {
   text-decoration: none;
-  font-size: 13px;
+  font-size: 1.3rem;
   font-weight: 400;
   color: var(--gray-text);
-  font-family: "poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .food_items #burger {
-  width: 57px;
-  height: 30px;
-  border-radius: 10px;
+  width: 5.7rem;
+  height: 3rem;
+  border-radius: 1rem;
   background-color: var(--blue-color);
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--white-color);
-  padding-left: 13px;
-  padding-right: 15px;
+  padding-left: 1.3rem;
+  padding-right: 1.5rem;
 }
+
 .food_items .others {
-  width: 50px;
-  height: 30px;
-  border-radius: 10px;
+  width: 5rem;
+  height: 3rem;
+  border-radius: 1rem;
   display: flex;
   font-weight: 400;
   justify-content: center;
   align-items: center;
-  font-size: 13px;
+  font-size: 1.3rem;
 }
+
 .bottom_box h3 {
   position: absolute;
-  top: 75px;
-  left: 15px;
+  top: 7.5rem;
+  left: 1.5rem;
   font-weight: 400;
-  font-size: 13px;
-  font-family: "poppins", sans-serif;
-  line-height: 24px;
+  font-size: 1.3rem;
+  font-family: "Poppins", sans-serif;
+  line-height: 2.4rem;
   color: var(--black_text);
 }
+
 .bottom_box h4 {
   position: absolute;
-  top: 95px;
-  left: 15px;
+  top: 9.5rem;
+  left: 1.5rem;
   font-weight: 300;
-  font-size: 13px;
-  font-family: "poppins", sans-serif;
-  line-height: 19.5px;
+  font-size: 1.3rem;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.95rem;
   color: var(--gray-text);
 }
+
 .bottom_box p {
   position: absolute;
-  top: 75px;
-  right: 80px;
+  top: 7.5rem;
+  right: 8rem;
   font-weight: 500;
-  font-size: 13px;
-  font-family: "poppins", sans-serif;
-  line-height: 24px;
+  font-size: 1.3rem;
+  font-family: "Poppins", sans-serif;
+  line-height: 2.4rem;
   color: var(--blue-color);
 }
+
 .bottom_box img {
   position: absolute;
-  top: 98px;
-  right: 15px;
+  top: 9.8rem;
+  right: 1.5rem;
   font-weight: 400;
-  font-size: 13px;
-  font-family: "poppins", sans-serif;
-  line-height: 19.5px;
+  font-size: 1.3rem;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.95rem;
   color: var(--gray-text);
 }
+
 .bottom_box .progress_bar2 {
   position: absolute;
-  top: 98px;
-  right: 70.8px;
+  top: 9.8rem;
+  right: 7.08rem;
   font-weight: 400;
-  font-size: 13px;
-  font-family: "poppins", sans-serif;
-  line-height: 19.5px;
+  font-size: 1.3rem;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.95rem;
   color: var(--gray-text);
 }
+
 .cheeseburger_box {
   position: absolute;
-  top: 134px;
-  left: 15px;
-  width: 155px;
-  height: 174px;
+  top: 13.4rem;
+  left: 1.5rem;
+  width: 15.5rem;
+  height: 17.4rem;
   background-color: var(--purple-color);
-  border-radius: 15px 0 15px 15px;
+  border-radius: 1.5rem 0 1.5rem 1.5rem;
 }
+
 .cheeseburger_box img {
   position: absolute;
-  top: -25px;
-  left: 13px;
-  right: 9.5px;
-  width: 145.75px;
+  top: -2.5rem;
+  left: 1.3rem;
+  right: 0.95rem;
+  width: 14.575rem;
 }
+
 .cheeseburger_box p {
   color: var(--white-color);
-  text-wrap: nowrap;
+  white-space: nowrap;
   text-align: center;
-  padding-top: 13px;
+  padding-top: 1.3rem;
   position: absolute;
-  left: 9px;
-  right: 15px;
+  left: 0.9rem;
+  right: 1.5rem;
 }
+
 .cheeseburger_box .stars {
   position: absolute;
-  top: 115px;
-  left: 40px;
-  width: 79px;
-  height: 11.24px;
+  top: 11.5rem;
+  left: 4rem;
+  width: 7.9rem;
+  height: 1.124rem;
 }
+
 .cheeseburger_box .cb_price {
   position: absolute;
-  top: 135px;
-  left: 57px;
-  width: 50px;
-  height: 25px;
+  top: 13.5rem;
+  left: 5.7rem;
+  width: 5rem;
+  height: 2.5rem;
 }
+
 .cheezyburger_box {
   position: absolute;
-  top: 20px;
-  left: calc(100vw - 160px);
-  width: 120px;
-  height: 137px;
-  margin-left: 12px;
+  top: 2rem;
+  left: calc(100vw - 16rem);
+  width: 12rem;
+  height: 13.7rem;
+  margin-left: 1.2rem;
   background-color: var(--purple-color);
-  border-radius: 15px 0 15px 15px;
-  background-color: var(--blue-color);
+  border-radius: 1.5rem 0 1.5rem 1.5rem;
 }
+
 .cheezyburger_box .stars-2 {
   position: absolute;
-  top: 90px;
-  left: 19px;
-  width: 79px;
-  height: 11.24px;
+  top: 9rem;
+  left: 1.9rem;
+  width: 7.9rem;
+  height: 1.124rem;
 }
+
 .cheezyburger_box .cb_price-2 {
   position: absolute;
-  top: 110px;
-  left: 45px;
-  width: 36px;
-  height: 18px;
+  top: 11rem;
+  left: 4.5rem;
+  width: 3.6rem;
+  height: 1.8rem;
 }
+
 .cheezyburger_box img {
   position: absolute;
-  top: -10px;
-  left: 23px;
-  right: 9.5px;
-  width: 86.04px;
+  top: -1rem;
+  left: 2.3rem;
+  right: 0.95rem;
+  width: 8.604rem;
 }
+
 .cheezyburger_box p {
   color: var(--white-color);
-  text-wrap: nowrap;
+  white-space: nowrap;
   text-align: center;
-  padding-top: 13px;
+  padding-top: 1.3rem;
   position: absolute;
-  left: 9px;
-  right: 15px;
-  top: 50px;
+  left: 0.9rem;
+  right: 1.5rem;
+  top: 5rem;
 }
+
 .box .homebtn {
   position: absolute;
-  top: 336px;
-  left: 15px;
+  top: 33.6rem;
+  left: 1.5rem;
 }
+
 .box .navsearch {
   position: absolute;
-  top: 336px;
-  left: 120px;
+  top: 33.6rem;
+  left: 12rem;
 }
+
 .box .nav_notif {
   position: absolute;
-  top: 336px;
-  right: 120px;
+  top: 33.6rem;
+  right: 12rem;
 }
+
 .box .nav_profile {
   position: absolute;
-  top: 336px;
-  right: 15px;
+  top: 33.6rem;
+  right: 1.5rem;
 }
