@@ -30,7 +30,7 @@ main {
   position: relative;
 }
 .bottom_box {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: var(--white-color);
   width: 100vw;
   height: 50vh;
   border-top-left-radius: 34px;
