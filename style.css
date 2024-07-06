@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-* {
+*, *::before, *::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
 
 body {
   background-color: rgba(126, 137, 198, 1);
@@ -20,15 +21,11 @@ html {
   --white-color: rgba(255, 255, 255, 1);
   --gray-text: rgba(88, 89, 91, 1);
   --black_text: rgba(0, 0, 0, 1);
-}
-
-main {
-  border-top-left-radius: 3rem;
-  border-top-right-radius: 3rem;
+  --font-family: "Poppins", sans-serif;
 }
 
 .top_box {
-  width: 100vw;
+  max-width: 100%;
   height: 50vh;
   padding-top: 3.4rem;
   padding-left: 2.2rem;
@@ -68,7 +65,7 @@ main {
 
 .food_items a {
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 400;
   color: var(--gray-text);
   font-family: "Poppins", sans-serif;
@@ -87,6 +84,16 @@ main {
   padding-right: 1.5rem;
 }
 
+.burger-pic {
+  filter: drop-shadow(0 0 0 rgba(0, 0, 0, 0));
+  transition: filter 0.43s ease-in; 
+}
+
+
+.burger-pic:hover {
+  cursor: pointer;
+  filter: drop-shadow(-10px -10px 10px pink);
+}
 .food_items .others {
   width: 5rem;
   height: 3rem;
@@ -166,9 +173,8 @@ main {
 .cheeseburger_box img {
   position: absolute;
   top: -2.5rem;
-  left: 1.3rem;
+  left: 1rem;
   right: 0.95rem;
-  width: 14.575rem;
 }
 
 .cheeseburger_box p {
@@ -204,7 +210,7 @@ main {
   width: 12rem;
   height: 13.7rem;
   margin-left: 1.2rem;
-  background-color: var(--purple-color);
+  background-color: var(--blue-color);
   border-radius: 1.5rem 0 1.5rem 1.5rem;
 }
 
@@ -251,18 +257,337 @@ main {
 
 .box .navsearch {
   position: absolute;
-  top: 33.6rem;
-  left: 12rem;
+  top: 33.7rem;
+  left: 10rem;
 }
 
 .box .nav_notif {
   position: absolute;
-  top: 33.6rem;
-  right: 12rem;
+  top: 33.7rem;
+  right: 11rem;
 }
 
 .box .nav_profile {
   position: absolute;
-  top: 33.6rem;
+  top: 33.7rem;
+  right: 1.5rem;
+}
+.ordering {
+  position: relative;
+  background-color: var(--white-color);
+  max-width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+}
+.first_page {
+  position: relative;
+  background-color: var(--blue-color);
+  max-width: 100vw;
+  max-height: 100vh;
+  /* overflow: hidden; */
+}
+.ordering_nav {
+  padding-top: 3.4rem;
+  padding-left: 2.2rem;
+  padding-right: 2.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.food_list {
+  padding-top: 2.6rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.95rem;
+}
+.food_types {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--gray-text);
+  font-family: "Poppins", sans-serif;
+  width: 5.7rem;
+  height: 3rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1.3rem;
+  padding-right: 1.5rem;
+}
+.burger {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+}
+.bigburger {
+  width: 32.4rem;
+  position: relative;
+  top: 15rem;
+  left: 48%; 
+  transform: translate(-50%, -50%);
+}
+.item_bkg {
+  position: relative;
+  bottom: 21.5rem;
+  z-index: -99;
+}
+.amount_board {
+  position: absolute;
+  top: 67%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+}
+.price_tag {
+  position: absolute;
+  top:15%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+}
+.food_name {
+  position: absolute;
+  top: 26%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+}
+.avatar {
+  position: absolute;
+  top: 40%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+}
+.plus_sign {
+  position: absolute;
+  top: 60%; 
+  left: 36%; 
+  transform: translate(-50%, -50%); 
+}
+.no2 {
+  position: absolute;
+  top: 60%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+}
+.minus_sign {
+  position: absolute;
+  top: 60%; 
+  right: 30%; 
+  transform: translate(-50%, -50%); 
+}
+.added {
+  position: absolute;
+  top: 80%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+}
+.hmebtn {
+  position: absolute;
+  top: 71.4rem;
+  left: 1.5rem;
+}
+
+.finderbtn {
+  position: absolute;
+  top: 71.4rem;
+  left: 10rem;
+}
+
+.bellbtn {
+  position: absolute;
+  top: 71.4rem;
+  right: 11rem;
+}
+
+.profbtn {
+  position: absolute;
+  top: 71.4rem;
+  right: 1.5rem;
+}
+.cart {
+  background-color: var(--purple-color);
+}
+.top_area {
+  background-color: var(--purple-color);
+  height: 18vh;
+}
+.cart_nav {
+   color: var(--white-color);
+}
+.bottom_area {
+  background-color: var(--white-color);
+  width: 100vw;
+  height: 82vh;
+  border-top-left-radius: 3.4rem;
+  border-top-right-radius: 3.4rem;
+  padding-bottom: 3.4rem;
+  position: relative;
+}
+.bottom_area h1 {
+  font-family:var(--font-family) ;
+  font-weight: 500;
+  font-size: 20px;
+  position: absolute;
+  left: 2.8rem;
+  top: 1.5rem;
+}
+.list {
+  display: flex;
+}
+.veggies {
+  position: absolute;
+  top: 8.58rem;
+  left: 2.8rem;
+}
+.list p {
+  font-family: var(--font-family);
+  font-size: 15px;
+}
+.vegb_name {
+  position: absolute;
+  top: 8.58rem;
+  left: 13rem;
+}
+.vegb_price {
+  position: absolute;
+  top: 11.5rem;
+  left: 31rem;
+}
+.chzburger {
+  position: absolute;
+  top: 17.5rem;
+  left: 2.8rem;
+}
+.chzb_name {
+  position: absolute;
+  top: 17.5rem;
+  left: 13rem;
+}
+.chzb_price {
+  position: absolute;
+  top: 20rem;
+  left: 31rem;
+}
+.slide {
+  position: absolute;
+  top: 26.42rem;
+  left: 2.8rem;
+}
+.bin {
+  position: absolute;
+  top: 28.5rem;
+  left: 5rem;
+}
+.beefburger {
+  position: absolute;
+  top: 26.5rem;
+  left: 10rem;
+}
+.bburger_name {
+  position: absolute;
+  top: 27.2rem;
+  left: 19rem;
+}
+.tray {
+  position: absolute;
+  top: 29rem;
+  left: 19rem;
+  font-weight: 200;
+  line-height: 18px;
+  width: 11.8rem;
+  height: 1.8rem;
+}
+.chkburger {
+  position: absolute;
+  top: 35.34rem;
+  left: 2.8rem;
+}
+.chkb_name {
+  position: absolute;
+  top: 35.34rem;
+  left: 13rem;
+}
+.another_tray {
+  position: absolute;
+  top: 37.4rem;
+  left: 13rem;
+  font-weight: 200;
+  line-height: 18px;
+  width: 11.5rem;
+  height: 1.8rem;
+}
+.chkb_price {
+  position: absolute;
+  top: 37rem;
+  left: 31rem;
+}
+
+
+.underline{
+  position: absolute;
+  top: 45rem;
+}
+.total_price {
+  position: absolute;
+  top: 49rem;
+  left: 2.9rem;
+}
+.card {
+  position: absolute;
+  top: 48rem;
+  left: 28rem;
+}
+.card_name {
+  font-size: 1.5rem;
+  font-family: var(--font-family);
+  color: var(--white-color);
+  position: absolute;
+  top: 48.5rem;
+  left: 29.5rem;
+}
+.boxes .homebtn {
+  position: absolute;
+  top: 57.9rem;
+  left: 1.5rem;
+}
+
+.boxes .navsearch {
+  position: absolute;
+  top: 58rem;
+  left: 10rem;
+}
+
+.boxes .nav_notif {
+  position: absolute;
+  top: 58rem;
+  right: 11rem;
+}
+
+.boxes .nav_profile {
+  position: absolute;
+  top: 58rem;
+  right: 1.5rem;
+}
+.box_two .homebtn {
+  position: absolute;
+  top: 70rem;
+  left: 1.5rem;
+}
+
+.box_two .navsearch {
+  position: absolute;
+  top: 70rem;
+  left: 10rem;
+}
+
+.box_two .nav_notif {
+  position: absolute;
+  top: 70rem;
+  right: 11rem;
+}
+
+.box_two .nav_profile {
+  position: absolute;
+  top: 70rem;
   right: 1.5rem;
 }
